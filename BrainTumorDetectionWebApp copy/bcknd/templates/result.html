@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor Classifier</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<h1 class="text-center">Brain Tumor Classification Model with Deep and GLCM Features</h1>
+<label form="formFileMultiple" class="form-label">Upload Brain MRI image:</label>
+<h3 class="text-success"></h3>
+<form action="/", method="post", enctype="multipart/form-data">
+    <input name="imgFile" class="form-control" type="file"/>
+    <input type="submit" class="btn btn-dark" value="Submit Image for Prediction"></input>
+</form>
+
+<form action="/pred", method="post", enctype="multipart/form-data">
+
+    <input type="submit" class="btn btn-dark" value="Start Prediction"></input>
+</form>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
